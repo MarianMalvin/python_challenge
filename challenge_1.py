@@ -1,1 +1,7 @@
-base_str = "g fmnc wms bgblr rpylqjyrc gr zw fylb. rfyrq ufyr amknsrcpq ypc dmp. bmgle gr gl zw fylb gq glcddgagclr ylb rfyr'q ufw rfgq rcvr gq qm jmle. sqgle qrpgle.kyicrpylq() gq pcamkkclbcb. lmu ynnjw ml rfc spj."
+base_str = "pc/def/map"
+
+result = ""
+for char in base_str:
+    result += chr(ord(char) + 2)
+
+print(result.replace('"', ' ').replace('{', 'a').replace('|', 'b').replace('0', '.').replace('*', '(').replace(')', "'").replace('+', ')'))
